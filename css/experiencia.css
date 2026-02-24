@@ -1,8 +1,9 @@
+/* =============================
+   Seção de experiência
+============================= */
 .experience-section {
-  padding: 6rem 0;
   color: #f4f7ff;
   padding: var(--section-padding-block) 5%;
-
 }
 
 .experience-layout {
@@ -16,23 +17,23 @@
   display: grid;
 }
 
-
 .experience-column-title {
   margin: 1rem 0;
   font-size: 0.85rem;
   text-transform: uppercase;
   color: var(--color-accent);
-
 }
 
+/* =============================
+   Cards (base)
+============================= */
 .exp-card {
   position: relative;
-  background: linear-gradient(145deg, rgba(20, 20, 35, 0.92), rgba(11, 11, 20, 0.95));
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 18px;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(20, 20, 35, 0.92), rgba(11, 11, 20, 0.95));
   transition: transform 0.3s ease, border-color 0.3s ease;
-  
 }
 
 .exp-card::after {
@@ -57,26 +58,32 @@
 }
 
 .exp-skill-card {
-  min-height: 150px;
   display: flex;
   flex-direction: column;
+  min-height: 150px;
+}
 
-
+.exp-card-header {
+  padding: 2%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .exp-badge {
   display: inline-flex;
   align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   color: var(--color-accent);
-  font-size: 0.8rem;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  padding: 2%;
-  gap: 0.5rem;
- 
 }
 
-
+/* Conteúdo principal do card separado do header */
+.exp-card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
 
 .exp-period {
   display: block;
@@ -89,38 +96,39 @@
 }
 
 .exp-place {
-  color: #b8c3d8;
   font-size: 0.95rem;
+  color: #b8c3d8;
 }
 
 .exp-card ul {
   margin: 0;
-  color: #e4ebfb;
   line-height: 1.6;
+  color: #e4ebfb;
 }
 
-.exp-card ul li + li {
-}
-
+/* =============================
+   Grid de skills
+============================= */
 .skill-icons {
   display: flex;
+  flex: 1;
   gap: 5%;
-  margin: auto 2rem;
-
+  padding: 0;
+  list-style: none;
+  padding: 0 5%;
+  
 }
 
 .skill-icons-inline {
-  flex-wrap: nowrap;
- 
-}
+  flex-wrap: nowrap;}
 
 .skill-item {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  white-space: nowrap;
   gap: 0.2rem;
+  white-space: nowrap;
 }
 
 .skill-logo {
@@ -129,11 +137,14 @@
 
 .skill-item span {
   font-size: 0.8rem;
-  color: #e4ebfb;
   line-height: 1;
   text-align: center;
+  color: #e4ebfb;
 }
 
+/* =============================
+   Responsivo
+============================= */
 @media (max-width: 980px) {
   .experience-layout {
     grid-template-columns: 1fr;
