@@ -84,8 +84,8 @@
 /* Conteúdo principal do card separado do header */
 .exp-card-body {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   padding: 1.5rem;
 
@@ -197,14 +197,11 @@
   }
 
   .exp-card-body {
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
 @media (max-width: 680px) {
- 
-
-  
 
   .skill-icons-inline{
     justify-content: center;
