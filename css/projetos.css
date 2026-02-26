@@ -1,27 +1,24 @@
 .section-projetos {
-  padding: var(--section-padding-block) 1.25rem;
+    padding: var(--section-padding-block) 5%;
+
 }
 
 .container-projetos {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .card-projeto {
-  background: linear-gradient(165deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 1rem;
-  padding: 1.25rem;
   display: grid;
-  gap: 1rem;
-  min-height: 220px;
+  min-height: 250px;
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -32,61 +29,46 @@
 
 .card-projeto-topo {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: flex-start;
-  text-align: start ;
+  padding: 1rem;
   gap: 1rem;
 }
 .skill-card-projeto {
-    font-size: clamp(0.8rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 2rem);
 
+}
+
+.card-projeto-img {
+  width: 100%;
+  aspect-ratio: 16 / 12;
+  object-fit: cover;
 }
 
 
 
 
 .card-projeto-title {
-  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  padding: 1rem;
 }
 
-.card-projeto-img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-}
+
 
 .card-projeto p {
-  font-size: 0.95rem;
+  font-size: clamp(0.6rem, 1vw, 1em);
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.84);
-  letter-spacing: 0.6px;
+  padding: 1rem;
 }
 
 .card-actions {
   margin-top: auto;
   display: flex;
-  gap: 0.65rem;
   flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.btn-card-git {
-    background: #202430;
-  border: 1px solid rgba(255,255,255,0.06);
-  color: var(--color-text-muted);
-  padding: 0.8rem;
 
-
-}
-
-.btn-card-projeto.btn-outline {
-   background: var(--color-accent);
-  color: var(--color-white);
-  border: 1px solid var(--color-accent);
-
-}
 
 @media (max-width: 1100px) {
   .projects-grid {

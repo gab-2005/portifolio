@@ -93,15 +93,16 @@ button{
 
 }
 
-.btn-content svg {
-  transition: transform 0.3s ease;
-  
+.btn-links {
+  background: #202430;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--color-text-muted);
+  padding: 0.8rem;
 }
 
-/* Hover sobe tudo */
-.btn-hero button:hover .btn-content svg {
-  transform: translateY(-4px);
-  
+.btn-secundario {
+  background-color: var(--color-accent);
+  color: var(--color-text-muted);
 }
 
 @keyframes pulseIcon {
